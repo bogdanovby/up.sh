@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /home/pavel/tmp/`date +%m%d`
+mkdir -p /home/pavel.bogdanov/tmp/`date +%m%d`
