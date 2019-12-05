@@ -1,2 +1,3 @@
 #!/bin/bash
-mkdir -p /home/pavel.bogdanov/tmp/`date +%m%d`
+google-drive-ocamlfuse /home/pavel/tmp/ &&
+mkdir -p /home/pavel/tmp/`date +%y`/`date +%m%d` 
