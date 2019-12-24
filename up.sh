@@ -1,3 +1,3 @@
 #!/bin/bash
-google-drive-ocamlfuse /home/pavel/tmp/ &&
-mkdir -p /home/pavel/tmp/`date +%y`/`date +%m%d` 
+google-drive-ocamlfuse /home/pavel/GOOGLE_DRIVE/ &&
+mkdir -p /home/pavel/GOOGLE_DRIVE/tmp/`date +%y-%m-%d` 
