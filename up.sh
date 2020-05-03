@@ -1,3 +1,4 @@
 #!/bin/bash
-google-drive-ocamlfuse /home/pavel/GOOGLE_DRIVE/ &&
-mkdir -p /home/pavel/GOOGLE_DRIVE/tmp/`date +%y-%m-%d` 
+rclone mount gdrive:/tmp /home/pavel/tmp &&
+sleep 10 &&
+mkdir -p /home/pavel/tmp/`date +%y-%m-%d` 
