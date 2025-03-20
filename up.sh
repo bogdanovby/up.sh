@@ -1,4 +1,9 @@
 #!/bin/bash
-rclone mount gdrive:/tmp /home/pavel/tmp &&
-sleep 10 &&
-mkdir -p /home/pavel/tmp/`date +%Y-%m-%d` 
+today=$(date +%Y-%m-%d)
+target="/home/pavel/tmp/$today"
+
+# Создаем директорию с сегодняшней датой
+mkdir -p "$target"
+
+# Обновляем симлинк в /home/pavel (например, называем его "latest")
+ln -sfn "$target" /home/pavel/latest
